@@ -23,5 +23,4 @@ if __name__ == '__main__':
             },
         ]
     )
-    print("hello")
     print(chat_response.choices[0].message.content)
