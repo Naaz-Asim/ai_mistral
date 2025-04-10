@@ -1,2 +1,6 @@
 python-dotenv~=1.0.1
 mistralai~=1.5.0
+openai~=1.23.0
+langchain~=0.3.23
+langchain-core~=0.3.51
+pymongo~=4.12.0
