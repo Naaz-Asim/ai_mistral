@@ -1,11 +1,12 @@
 import os
 from dotenv import load_dotenv
 from mistralai import Mistral
-load_dotenv()
 
+load_dotenv()
 
 if __name__ == '__main__':
     api_key = os.getenv('MISTRAL_API_KEY')
+
     if api_key is None:
         print('You need to set your MISTRAL_API_KEY environment variable')
         exit(1)
@@ -23,5 +24,4 @@ if __name__ == '__main__':
             },
         ]
     )
-    print("hello")
     print(chat_response.choices[0].message.content)
